@@ -1,10 +1,12 @@
 theme: jekyll-theme-cayman
-show_downloads: true
-analytics_enabled: true
-gems:
-  - jemoji
+repository: bennet0496/technicserver
+
+show_releases: true
+piwik_analytics: piwik.becker-dd.de/
+
 plugins:
   - jekyll-sitemap
+  - jemoji
 defaults:
   - scope:
       path: "assets/img"

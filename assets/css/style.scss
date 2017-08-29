@@ -11,8 +11,8 @@
 
 .menu__hover:before, .menu__hover:after,
 .menu__hover__label:before, .menu__hover__label:after{
-  content: "";     
-  position: absolute;   
+  content: "";
+  position: absolute;
   transition: transform .2s ease-out;
 }
 
@@ -72,4 +72,8 @@ p.head {
 .page-header {
 	padding: 5rem 6rem 0 6rem !important;
 	background: linear-gradient(120deg, rgba(21,87,153,0.5), rgba(21,153,87, 0.3)), url({{ '/assets/img/header_bg.jpg?v=' | append: site.github.build_revision | relative_url }}) no-repeat fixed 20% 35% !important;
+}
+
+.unhideme{
+  display: none;
 }
