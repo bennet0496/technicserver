@@ -2,7 +2,8 @@
 title: Privacy Policy
 ---
 # Privacy Policy
-Last updated: August 30, 2017
+Last updated: August 30, 2017  
+*[Deutsche Version unten](#datenschutz)*
 
 technicserver ("us", "we", or "our") operates the
 https://bennet0496.github.io/technicserver/ website (the "Service").
@@ -10,7 +11,7 @@ https://bennet0496.github.io/technicserver/ website (the "Service").
 This page informs you of our policies regarding the collection, use and
 disclosure of Personal Information when you use our Service.
 
-We will not use or share your information with anyone except as described in 
+We will not use or share your information with anyone except as described in
 this Privacy Policy. This Privacy Policy is licensed by TermsFeed Generator to
 technicserver Webpage.
 
