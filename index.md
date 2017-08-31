@@ -1,9 +1,9 @@
 # Technicserver
 run modpacks from technicpack.net as server with ease
 
-master Branch: [![Travis](https://img.shields.io/travis/bennet0496/technicserver.svg?style=flat-square)](https://travis-ci.org/bennet0496/technicserver) [![codebeat badge](https://codebeat.co/badges/ea46b4f3-083a-4f2c-b65b-587b2436983e)](https://codebeat.co/projects/github-com-bennet0496-technicserver-master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/eb1c94d78f1e41ca9076d47cf3c3157e)](https://www.codacy.com/app/bennet0496/technicserver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bennet0496/technicserver&amp;utm_campaign=Badge_Grade)
+master Branch: [![Build Status](https://travis-ci.org/bennet0496/technicserver.svg?branch=master)](https://travis-ci.org/bennet0496/technicserver) [![codebeat badge](https://codebeat.co/badges/ea46b4f3-083a-4f2c-b65b-587b2436983e)](https://codebeat.co/projects/github-com-bennet0496-technicserver-master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/eb1c94d78f1e41ca9076d47cf3c3157e)](https://www.codacy.com/app/bennet0496/technicserver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bennet0496/technicserver&amp;utm_campaign=Badge_Grade)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0) [![Github Releases](https://img.shields.io/github/downloads/bennet0496/technicserver/latest/total.svg?style=flat-square)](https://github.com/bennet0496/technicserver/releases) 
+[![license](https://img.shields.io/github/license/bennet0496/technicserver.svg?style=flat-square)](https://github.com/bennet0496/technicserver/blob/master/LICENSE.txt) [![Github Releases](https://img.shields.io/github/downloads/bennet0496/technicserver/latest/total.svg?style=flat-square)](https://github.com/bennet0496/technicserver/releases) 
 
 
 This Project aims to provide an simple wrapper for Minecraft Modpack Servers for Modpacks at technicpack.net. You only need to provide the Technicpack-API link and the technicserver will download the Modpack and convert it to a Minecraft Server. Both single ZIP-File Modpacks and Modpacks using the [Solder-API](http://solder.io/) (which in my opinion is the preferred Method of hosting Modpacks 😀) are supported
