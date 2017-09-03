@@ -14,7 +14,7 @@ disableAnalytics=false
 ```
 Where `url` is the Modpacks API Url, which will show up on the Modpacks page by
 pressing `Install this Modpack`.
-![getapiurl](/assets/img/getapiurl.png){:class="img-responsive"}
+![getapiurl]({{ site.baseurl }}/assets/img/getapiurl.png){:class="img-responsive"}
 
 The Parameter `autoupdate` specifies weather to automatically update the Modpack
 or not. Possible values are `yes`,`true` and `1` for activating autoupdate and
