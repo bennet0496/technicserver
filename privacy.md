@@ -173,7 +173,7 @@ Nutzungsdaten speichert. Wenn Sie Ihre Cookies löschen hat dies zur Folge, dass
 auch das Piwik Opt-Out-Cookie gelöscht wird. Das Opt-Out muss bei einem erneuten
 Besuch unserer Seite wieder aktiviert werden.
 
-<iframe style="border: 1; height: 200px; width: 600px;" src="https://piwik.becker-dd.de/index.php?module=CoreAdminHome&action=optOut&language=en"></iframe>
+<iframe style="border: 1; height: 200px; width: 600px;" src="https://piwik.becker-dd.de/index.php?module=CoreAdminHome&action=optOut&language=de"></iframe>
 
 ## SSL-Verschlüsselung
 Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung
