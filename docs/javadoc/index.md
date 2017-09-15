@@ -10,5 +10,6 @@ Javadoc is available for each individual branch and Version starting with 1.1.1-
 
 
 ## Versions
+ * [v2.0.1-rc2](v2.0.1-rc2/index.html)
  * [v2.0.0-rc1](v2.0.0-rc1/index.html)
  * [v1.1.1-SNAPSHOT](v1.1.1-SNAPSHOT/index.html)
