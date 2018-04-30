@@ -7,25 +7,16 @@ import de.beckerdd.bennet.minecraft.technicserver.util.AnsiColor;
 import de.beckerdd.bennet.minecraft.technicserver.util.ClientMod;
 import de.beckerdd.bennet.minecraft.technicserver.util.ForgeInstaller;
 import de.beckerdd.bennet.minecraft.technicserver.util.Logging;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InvalidClassException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import org.apache.commons.io.FileUtils;
+
+import java.io.*;
 import java.net.JarURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Paths;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-import org.apache.commons.io.FileUtils;
-import org.piwik.java.tracking.CustomVariable;
-import org.piwik.java.tracking.PiwikRequest;
-import org.piwik.java.tracking.PiwikTracker;
 
 
 /*
@@ -108,61 +99,10 @@ public class TechnicApi {
    * Report Statisics to Piwik instance.
    * @param runtime Loadup time
    * @param force override user config
+   * @deprecated removed analytics for sake of privacy
    */
   public void runAnalytics(String runtime, boolean force) {
-    if (UserConfig.isDisableAnalytics() && !force) {
-      //Abort if disabled
-      return;
-    }
-
-    PiwikRequest piwikRequest;
-
-    try {
-      piwikRequest = new PiwikRequest(StaticConfig.PIWIK_SITE_ID, new URL(
-          StaticConfig.PIWIK_PROPERTY));
-    } catch (MalformedURLException e) {
-      //Abort on fail
-      return;
-    }
-    PiwikTracker piwikTracker = new PiwikTracker(StaticConfig.PIWIK_URL);
-    AtomicInteger ruleCounter = new AtomicInteger(0);
-
-    String implementationVersion = Main.class.getPackage().getImplementationVersion();
-
-    if (implementationVersion == null) {
-      if (System.getenv("TRAVIS") == null) {
-        implementationVersion = "DEBUG_RUN";
-      } else {
-        implementationVersion = "TRAVIS_CI_RUN";
-      }
-    }
-
-    piwikRequest.addCustomTrackingParameter("implementation-version",implementationVersion);
-    piwikRequest.setPageCustomVariable(
-        new CustomVariable("implementation-version", implementationVersion),
-        ruleCounter.incrementAndGet());
-
-    piwikRequest.addCustomTrackingParameter("modpack-url", UserConfig.getUrl());
-    piwikRequest.setPageCustomVariable(new CustomVariable("modpack-url", UserConfig.getUrl()),
-        ruleCounter.incrementAndGet());
-    piwikRequest.addCustomTrackingParameter("modpack-desired-version", UserConfig.getBuild());
-    piwikRequest.setPageCustomVariable(new CustomVariable("modpack-desired-version",
-            UserConfig.getBuild()), ruleCounter.incrementAndGet());
-    piwikRequest.addCustomTrackingParameter("modpack-autoupdate", UserConfig.isAutoupdate());
-    piwikRequest.setPageCustomVariable(new CustomVariable("modpack-autoupdate",
-        UserConfig.isAutoupdate() ? "true" : "false"), ruleCounter.incrementAndGet());
-    piwikRequest.addCustomTrackingParameter("modpack-name", modpack.getDisplayName());
-    piwikRequest.setPageCustomVariable(new CustomVariable("modpack-name", modpack.getDisplayName()),
-        ruleCounter.incrementAndGet());
-    piwikRequest.addCustomTrackingParameter("modpack-setuptime", runtime);
-    piwikRequest.setPageCustomVariable(new CustomVariable("modpack-setuptime", runtime),
-        ruleCounter.incrementAndGet());
-
-    try {
-      piwikTracker.sendRequest(piwikRequest);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
+    return;
   }
 
   /**

@@ -56,7 +56,6 @@ public final class Main {
       System.exit(1);
     }
 
-    Date startTime = new Date();
 
     TechnicApi technicApi = new TechnicApi(UserConfig.getUrl());
 
@@ -67,10 +66,6 @@ public final class Main {
     }
 
     technicApi.saveState();
-
-    technicApi.runAnalytics(Double.toString(
-        (startTime.getTime() - (new Date()).getTime())
-    ));
 
 
     ArrayList<String> modpackStartArguments = new ArrayList<>();
