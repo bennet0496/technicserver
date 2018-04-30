@@ -2,6 +2,7 @@
 run modpacks from technicpack.net as server with ease
 
 [![Travis](https://img.shields.io/travis/bennet0496/technicserver/master.svg?style=flat-square)](https://travis-ci.org/bennet0496/technicserver) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbennet0496%2Ftechnicserver.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbennet0496%2Ftechnicserver?ref=badge_shield)
 
 Project Page: https://bennet0496.github.io/technicserver/
 
@@ -20,3 +21,7 @@ For more details and documentation please see the Projects Homepage: https://ben
 
 
 Please keep in mind, this project is neighter an offical "Technicpack"/"Technic Platform" (copyrighted by Syndicate LLC) project nor it is an offical Minecraft (copyrighted by Mojang AB) project. Therefore this project is neither affiliated with these companies nor it has special permission.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbennet0496%2Ftechnicserver.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbennet0496%2Ftechnicserver?ref=badge_large)
