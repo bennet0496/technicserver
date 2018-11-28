@@ -50,7 +50,7 @@ public final class StaticConfig {
   /**
    * Technic Launcher Current build ID needed for api request.
    */
-  public static final int LAUNCHER_BUILD_ID = 355;
+  public static final int LAUNCHER_BUILD_ID = 401;
 
   /**
    * Prevent initialization.
